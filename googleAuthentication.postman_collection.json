@@ -1,0 +1,29 @@
+{
+	"info": {
+		"_postman_id": "f4627695-a5fa-4c68-af82-2da6525e496a",
+		"name": "googleAuthentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16680026"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/google-sign-in",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"google-sign-in"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
