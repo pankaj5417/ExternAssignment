@@ -46,12 +46,12 @@ async function mailer(recievermail){
         from: 'madhuban541@gmail.com', // sender address
         to: recievermail, // list of receivers
         subject: "Notification", // Subject line
-        text: `You are logged in successfully `, // plain text body
-        html: `<b>You are logged in successfully</b>`, // html body
+        text: `Welcome,You are logged in successfully `, // plain text body
+        html: `<b>Welcome,You are logged in successfully</b>`, // html body
       });
     
        console.log("Message sent: %s", info.messageId);
-       console.log("Preview URL:%s",nodemailer.getTestMessageUrl(info))
+      //  console.log("Preview URL:%s",nodemailer.getTestMessageUrl(info))
     
 
 }
@@ -114,8 +114,6 @@ app.get(
   '/auth/google/callback',
   passport.authenticate('google', { failureRedirect: '/login' }),
   async  (req, res) =>{
-    // const {name,email}=req.user._json
-   console.log("usrsss",req.user._json)
    
 
     res.cookie('user', req.user);
